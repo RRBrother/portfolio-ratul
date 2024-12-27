@@ -25,7 +25,7 @@ body{
 .logo{
     position: relative;
     font-size: 25px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
      font-weight: 600;
 
@@ -33,7 +33,7 @@ body{
 
 .navbar a  {
     font-size: 18px;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
      font-weight: 500;
      margin-left: 35px;
@@ -53,15 +53,13 @@ body{
     background-position: right;
     display: flex;
     align-items: center;
-    /* padding: 0 10%; */
-    justify-content: left;
     
 }
 
 .info{
     padding-left: 0px;
     max-width: 500px;
-    color: black;
+    color: aqua;
     font-style: italic;
     font-size: 20px;
     font-weight: bold;
@@ -87,7 +85,7 @@ line-height: 2.3;
 }
 .about2{
     height: 100vh;
-    background-image: url(about.jpg);
+    background-color: #000f64;
     background-position: center;
     background-size: cover;
     padding: 0px 30px;
@@ -95,4 +93,53 @@ line-height: 2.3;
     align-items: center;
 }
 
+/* photo part  */
 
+.ratul-image {
+    height: 400px;; /* Set a specific height */
+    width: 300px;; /* Set a specific width */
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+
+    border-radius: 10%;
+
+
+    /* it's the popup animation  */
+
+    transition: transform 0.3s ease;
+}
+/* it's the popup animation  */
+
+.ratul-image:hover {
+    transform: scale(1.1);
+}
+
+
+.image2{
+    height: auto;
+    width: auto;
+    padding: 0; 
+ 
+    display: flex;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-fill-mode: forwards;
+   
+    border-radius: 10%; 
+}
+@keyframes spin {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        
+    }
+}
