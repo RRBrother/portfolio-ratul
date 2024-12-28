@@ -70,6 +70,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    animation-name: spin;
+    animation-duration: 2s;
+    
 }
 
 .info h2 {
@@ -130,22 +133,24 @@ line-height: 2.3;
  
     display: flex;
     overflow: hidden;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: spin;
     animation-fill-mode: forwards;
-   
+    animation-delay: 2s;
     border-radius: 10%; 
+    box-shadow: -5px -5px 7px 0px  aqua , 0px 0px 7px 0px aqua inset;
+    opacity: 0;
 }
 @keyframes spin {
     0% {
         transform: translateX(-100%);
         opacity: 0;
-        scale: 0.4;
+        
     }
     
     100% {
         transform: translateX(0%);
         opacity: 1;
-        scale: 1;
+        
     }
 }
