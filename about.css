@@ -46,6 +46,8 @@ body{
     color: #00abf0;
 }
 
+/* writing part */
+
 .about{
     height: 100vh;
     background-color:transparent;
@@ -93,6 +95,8 @@ line-height: 2.3;
     align-items: center;
 }
 
+/* writing part ends here  */
+
 /* photo part  */
 
 .ratul-image {
@@ -116,6 +120,7 @@ line-height: 2.3;
 .ratul-image:hover {
     transform: scale(1.1);
 }
+ 
 
 
 .image2{
