@@ -61,6 +61,7 @@ body{
     color: #00abf0;
 
 }
+
 .home{
     height: 100vh;
     background: url('home.jpg') no-repeat;
@@ -122,11 +123,13 @@ body{
 .btn-box a:hover{
 
     color: #00abf0;
+    background: transparent;
 }
 
 .btn-box a:nth-child(2){
     background: transparent;
-    color: #00acf0;
+    color: #00abf0;
+    
 
 }
 
